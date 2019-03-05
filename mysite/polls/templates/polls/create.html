@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="." method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    Question Text: <input type="text" name="question_text"><br>
+    Pub Date     : <input type="date" name="pub_date">
+
+    <h3>Choice Part</h3>
+
+    Choice 1:<br>
+    <input type="text" name="choice_text1">
+    <input type="number" name="votes1">
+    <br>
+    Choice 2:<br>
+    <input type="text" name="choice_text2">
+    <input type="number" name="votes2">
+
+    <br>
+    Choice 3:<br>
+    <input type="text" name="choice_text3">
+    <input type="number" name="votes3">
+
+
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

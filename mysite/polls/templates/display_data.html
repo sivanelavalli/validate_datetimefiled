@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>key "a"</h1>
+    {% for el in data.a %}
+    <li>{{ el }}</li>
+    {% endfor %}
+
+    <h1>key "b"</h1>
+    {% for el in data.b %}
+    <li>{{ el }}</li>
+    {% endfor %}
+
+    <h1> key "c" </h1>
+    {% for key, value in data.c.items %}
+    <li>{{key}} : {{value}}</li>
+    {% endfor %}
+
+
+    <!--{{ data.c.fname }}<br>-->
+    <!--{{ data.c.lname }}-->
+</body>
+</html>
